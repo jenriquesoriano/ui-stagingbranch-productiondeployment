@@ -16,7 +16,7 @@
     <script src="../lib/angularjs/angular.min.js"></script>
     <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.min.css">
     <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
-  <script src="../lib/momentjs/moment.min.js"></script>
+	<script src="../lib/momentjs/moment.min.js"></script>
     <script src="../lib/momentjs/moment-with-locales.min.js"></script>
     <script src="../lib/jquery-ui/jquery-ui.min.js"></script>
     <script src="../js/config.js"></script>
@@ -39,7 +39,7 @@
       media="print"
     />
     <link type="text/css" rel="stylesheet" href="../css/validator.css" />
-  <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
   </head>
   <body ng-app="myNgValidator">
     <!-- paste the markup from the template here -->
@@ -78,8 +78,8 @@
                   data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
                   <use xlink:href="../component-library/dist/sprites/icons.svg#general--search"></use>
                 </svg></span></button>
-      <input type="hidden" name="form_build_id" value="form-HNzukaUwhdrtb67yMDfcMamU5dTPWdPx0f_pJEaMQZI" />
-      <input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
+			<input type="hidden" name="form_build_id" value="form-HNzukaUwhdrtb67yMDfcMamU5dTPWdPx0f_pJEaMQZI" />
+			<input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
           </form>
             </div>
           </div>
@@ -176,7 +176,7 @@
                             class="ecl-menu__sublink"></span></li>
                         <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
                             class="ecl-menu__sub">Validator API</span></li>
-                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/validator/swagger-ui.html"
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://inspire.ec.europa.eu/validator/swagger-ui.html"
                                 class="ecl-menu__sublink">Access the API</a></li>
                             <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/training%20material/2019-10-01%2B02%20JRC%20Workshop/Step-by-step%20example%20-%20API"
                                 class="ecl-menu__sublink">Example of API usage</a></li>
@@ -201,8 +201,8 @@
       </div>
     </header>
 
-  <!-- CONTENT -->
-  <script>
+	<!-- CONTENT -->
+	<script>
        var $_GET = {};
        document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
          function decode(s) {
@@ -210,8 +210,8 @@
          }
          $_GET[decode(arguments[1])] = decode(arguments[2]);
        });
-     var id = $_GET["id"];
-     document.write("<object type='text/html' data='" + serverDirectURL + "TestRuns/" + id + ".html' style='width:100%; height:70%'></object>");
+	   var id = $_GET["id"];
+	   document.write("<object type='text/html' data='" + serverDirectURL + "TestRuns/" + id + ".html' style='width:100%; height:70%'></object>");
     </script>
 
     <!-- FOOTER -->

@@ -16,7 +16,7 @@
     <script src="../lib/angularjs/angular.min.js"></script>
     <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.min.css">
     <script src="../lib/jquery/jquery-3.6.0.min.js"></script>
-  <script src="../lib/momentjs/moment.min.js"></script>
+	<script src="../lib/momentjs/moment.min.js"></script>
     <script src="../lib/momentjs/moment-with-locales.min.js"></script>
     <script src="../lib/jquery-ui/jquery-ui.min.js"></script>
     <script src="../js/config.js"></script>
@@ -38,7 +38,7 @@
       media="print"
     />
     <link type="text/css" rel="stylesheet" href="../css/validator.css" />
-  <link rel="shortcut icon" href="../favicon.ico">
+	<link rel="shortcut icon" href="../favicon.ico">
   </head>
   <body ng-app="myNgValidator">
     <!-- paste the markup from the template here -->
@@ -77,8 +77,8 @@
                   data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs">
                   <use xlink:href="../component-library/dist/sprites/icons.svg#general--search"></use>
                 </svg></span></button>
-      <input type="hidden" name="form_build_id" value="form-HNzukaUwhdrtb67yMDfcMamU5dTPWdPx0f_pJEaMQZI" />
-      <input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
+			<input type="hidden" name="form_build_id" value="form-HNzukaUwhdrtb67yMDfcMamU5dTPWdPx0f_pJEaMQZI" />
+			<input type="hidden" name="form_id" value="nexteuropa_europa_search_search_form" />
           </form>
             </div>
           </div>
@@ -175,7 +175,7 @@
                             class="ecl-menu__sublink"></span></li>
                         <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
                             class="ecl-menu__sub">Validator API</span></li>
-                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/validator/swagger-ui.html"
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://inspire.ec.europa.eu/validator/swagger-ui.html"
                                 class="ecl-menu__sublink">Access the API</a></li>
                             <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/training%20material/2019-10-01%2B02%20JRC%20Workshop/Step-by-step%20example%20-%20API"
                                 class="ecl-menu__sublink">Example of API usage</a></li>
@@ -254,9 +254,9 @@
                  <div class="rTableRow">
                    <div class="rTableCell50">&nbsp;</div>
                    <div class="rTableCell50" style="position: absolute; right: 15px; top: 0px; width:auto; overflow: visible;">
-          <button type="button" ng-click="showAllTestReports()" style="cursor: pointer;" class="ecl-button ecl-button--secondary">Show All Test Reports</button>
-           </div>
-          </div>
+					<button type="button" ng-click="showAllTestReports()" style="cursor: pointer;" class="ecl-button ecl-button--secondary">Show All Test Reports</button>
+				   </div>
+			    </div>
               </div>
                <div
                  class="ecl-u-type-m ecl-u-type-color-grey ecl-u-mt-l ecl-u-d-flex ecl-u-flex-column ecl-u-flex-lg-row ecl-u-align-items-lg-center">
@@ -286,7 +286,7 @@
                          class="ecl-tag__icon-close-filled ecl-icon ecl-icon--xs">
                          <use xlink:href="../component-library/dist/sprites/icons.svg#ui--close-filled"></use>
                        </svg></button></span>
-    </div>
+		</div>
                 <!-- ($index >= (searchParameters.currPage-1)*searchParameters.pageSize) && ($index < searchParameters.currPage*searchParameters.pageSize) -->
                <article class="ecl-u-d-flex ecl-u-pv-m ecl-u-border-bottom ecl-u-border-color-grey-15 itemResultMargin" ng-show="{{testItem.id.includes(testRunId) == true}}" ng-repeat="testItem in testResults | filter:cust() as filtered"> <!-- track by $index -->
                  <div id="backgroundStatus" class="rTable bg_{{testItem.status}}">
@@ -338,31 +338,31 @@
                                 <td>&nbsp;&nbsp;</td>
                                 <td ng-show="checkIfIsArray(testItem.testTasks.TestTask) == false">
                                   <span>• {{mappingTestSuite(testItem.testTasks.TestTask.executableTestSuite.ref)}}<br/></span>
-          <br/><br/><br/>
-          <table style="width: 100%">
-             <tr>
-           <td><a id="buttonSeeReport_{{testItem.id}}" target="_buttonLink_{{testItem.id}}" class="buttons_links" href="details.html?id={{testItem.id}}">See report <img style="vertical-align: middle;" src="../img/buttons/see_report.png" class="buttons_detail"></a></td>
-          <td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}/log">Log file <img style="vertical-align: middle;" src="../img/buttons/log_file.png" class="buttons_detail"></a></td>
-          <td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}.html?download=true">Download report <img style="vertical-align: middle;" src="../img/buttons/download_report.png" class="buttons_detail"></a></td>
-          <td><a class="buttons_links" href="" ng-click="deleteTest(testItem.id)">Delete report <img style="vertical-align: middle;" src="../img/buttons/delete_report.png" class="buttons_detail"></a></td>
-          <td><a class="buttons_links" href="" ng-click="reRunTest(testItem.id)">Re-run test <img style="vertical-align: middle;" src="../img/buttons/rerun_test.png" class="buttons_detail"></a></td>
-             </tr>
-          </table>
+				  <br/><br/><br/>
+				  <table style="width: 100%">
+				     <tr>
+					 <td><a id="buttonSeeReport_{{testItem.id}}" target="_buttonLink_{{testItem.id}}" class="buttons_links" href="details.html?id={{testItem.id}}">See report <img style="vertical-align: middle;" src="../img/buttons/see_report.png" class="buttons_detail"></a></td>
+					<td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}/log">Log file <img style="vertical-align: middle;" src="../img/buttons/log_file.png" class="buttons_detail"></a></td>
+					<td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}.html?download=true">Download report <img style="vertical-align: middle;" src="../img/buttons/download_report.png" class="buttons_detail"></a></td>
+					<td><a class="buttons_links" href="" ng-click="deleteTest(testItem.id)">Delete report <img style="vertical-align: middle;" src="../img/buttons/delete_report.png" class="buttons_detail"></a></td>
+					<td><a class="buttons_links" href="" ng-click="reRunTest(testItem.id)">Re-run test <img style="vertical-align: middle;" src="../img/buttons/rerun_test.png" class="buttons_detail"></a></td>
+				     </tr>
+				  </table>
                                 </td>
                                 <td ng-show="checkIfIsArray(testItem.testTasks.TestTask) == true">
                                   <span ng-repeat="testSuite in testItem.testTasks.TestTask">
                                       • {{mappingTestSuite(testSuite.executableTestSuite.ref)}}<br/>
                                   </span>
-          <br/>
-          <table style="width: 100%">
-             <tr>
-          <td><a id="buttonSeeReport_{{testItem.id}}" target="_buttonLink_{{testItem.id}}" class="buttons_links" href="details.html?id={{testItem.id}}">See report <img style="vertical-align: middle;" src="../img/buttons/see_report.png" class="buttons_detail"></a></td>
-          <td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}/log">Log file <img style="vertical-align: middle;" src="../img/buttons/log_file.png" class="buttons_detail"></a></td>
-          <td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}.html?download=true">Download report <img style="vertical-align: middle;" src="../img/buttons/download_report.png" class="buttons_detail"></a></td>
-          <td><a class="buttons_links" href="" ng-click="deleteTest(testItem.id)">Delete report <img style="vertical-align: middle;" src="../img/buttons/delete_report.png" class="buttons_detail"></a></td>
-          <td><a class="buttons_links" href="" ng-click="reRunTest(testItem.id)">Re-run test <img style="vertical-align: middle;" src="../img/buttons/rerun_test.png" class="buttons_detail"></a></td>
-             </tr>
-          </table>
+				  <br/>
+				  <table style="width: 100%">
+				     <tr>
+					<td><a id="buttonSeeReport_{{testItem.id}}" target="_buttonLink_{{testItem.id}}" class="buttons_links" href="details.html?id={{testItem.id}}">See report <img style="vertical-align: middle;" src="../img/buttons/see_report.png" class="buttons_detail"></a></td>
+					<td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}/log">Log file <img style="vertical-align: middle;" src="../img/buttons/log_file.png" class="buttons_detail"></a></td>
+					<td><a target="_buttonLink" class="buttons_links" href="{{urlValidator}}TestRuns/{{testItem.id}}.html?download=true">Download report <img style="vertical-align: middle;" src="../img/buttons/download_report.png" class="buttons_detail"></a></td>
+					<td><a class="buttons_links" href="" ng-click="deleteTest(testItem.id)">Delete report <img style="vertical-align: middle;" src="../img/buttons/delete_report.png" class="buttons_detail"></a></td>
+					<td><a class="buttons_links" href="" ng-click="reRunTest(testItem.id)">Re-run test <img style="vertical-align: middle;" src="../img/buttons/rerun_test.png" class="buttons_detail"></a></td>
+				     </tr>
+				  </table>
                                 </td>
                               </tr>
                             </table>

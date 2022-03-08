@@ -178,7 +178,7 @@
                             class="ecl-menu__sublink"></span></li>
                         <li class="ecl-menu__subitem" data-ecl-menu-subitem="true"><span
                             class="ecl-menu__sub">Validator API</span></li>
-                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://staging-inspire-validator.eu-west-1.elasticbeanstalk.com/validator/swagger-ui.html"
+                            <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://inspire.ec.europa.eu/validator/swagger-ui.html"
                                 class="ecl-menu__sublink">Access the API</a></li>
                             <li class="ecl-menu__subitem" data-ecl-menu-subitem="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/tree/master/training%20material/2019-10-01%2B02%20JRC%20Workshop/Step-by-step%20example%20-%20API"
                                 class="ecl-menu__sublink">Example of API usage</a></li>
@@ -325,18 +325,11 @@
                         </svg></span>Conformance Class 2: 'INSPIRE data sets and data set series interoperability metadata' (<a target="_linkTest" href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss">source</a>)</label>
                   </div>
                   <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="metadata-20-dataset-options-4"
-                      name="checkbox-default" value="conformanceclass2bds" ng-click="selectMetadataAdvancedConformanceClass2bds()"/><label class="ecl-checkbox__label" for="metadata-20-dataset-options-4"><span
+                      name="checkbox-default" value="conformanceclass2ds" ng-click="selectMetadataAdvancedConformanceClass2bds()"/><label class="ecl-checkbox__label" for="metadata-20-dataset-options-4"><span
                         class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
                           class="ecl-checkbox__icon ecl-icon ecl-icon--s">
                           <use xlink:href="../component-library/dist/sprites/icons.svg#ui--check"></use>
                         </svg></span>Conformance Class 2b: 'INSPIRE data sets and data set series metadata for Monitoring' (<a target="_linkTest" href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/monitoring">source</a>)</label>
-                  </div>
-                  <div class="ecl-checkbox"><input type="checkbox" class="ecl-checkbox__input" id="metadata-20-dataset-options-5"
-                      name="checkbox-default" value="conformanceclass2cds" ng-click="selectMetadataAdvancedConformanceClass2cds()"/><label class="ecl-checkbox__label" for="metadata-20-dataset-options-5"><span
-                        class="ecl-checkbox__box"><svg focusable="false" aria-hidden="true"
-                          class="ecl-checkbox__icon ecl-icon ecl-icon--s">
-                          <use xlink:href="../component-library/dist/sprites/icons.svg#ui--check"></use>
-                        </svg></span>Conformance Class 2c: 'INSPIRE data sets and data set series metadata for IACS' (<a target="_linkTest" href="http://inspire.ec.europa.eu/id/ats/metadata/2.0/iacs">source</a>)</label>
                   </div>
                 </fieldset>
                 <!-- 2.0 & networkservice -->
@@ -5288,11 +5281,11 @@
             <span ng-show="select.fileUploadType == 'upload' && select.typeResource == 'metadata'">Select an XML file or a ZIP file containing one or multiple XML files. The Maximum size of the uploaded file is 50 MB. The upload starts immediately after selecting the files. The 'Start' button is unlocked when the upload has been successfully completed.<br/><br/></span>
             <span ng-show="select.fileUploadType == 'remote' && select.typeResource == 'metadata'">Provide a URL to a remote XML file or a ZIP file containing one or multiple XML files, either from a request to an INSPIRE Spatial Data Service endpoint or a file repository. The download will be initiated after clicking on the 'Start' button. This download has a timeout of 120s.<br/><br/></span>
             <span ng-show="select.typeResource == 'viewservice'">Please enter a getCapabilities request to your service.<br/><br/></span>
-            <span ng-show="select.typeResource == 'downloadservice' && select.downloadServiceType != 'OGC'">Please enter a getCapabilities request to your service.<br/><br/></span>
+            <span ng-show="select.typeResource == 'downloadservice' && select.downloadServiceType != 'OGC'">Please enter a getCapabilities request to your service.<br/><br/></span>            
             <span ng-show="select.typeResource == 'downloadservice' && select.downloadServiceType == 'OGC'">Please enter the URL for your API landing page. Please note that the execution of the test relies on the OGC TEAM Engine. It can take up to several minutes and timeouts are possible.<br/><br/></span>
             <span ng-show="select.typeResource == 'discoveryservice'">Please enter a getCapabilities request to your service.<br/><br/></span>
             <span ng-show="select.fileUploadType == 'upload' && select.typeResource == 'dataset'">Select an XML/GML file or a ZIP file containing one or multiple XML/GML files. The Maximum size of the uploaded file is 50 MB. The upload starts immediately after selecting the files. The 'Start' button is unlocked when the upload has been successfully completed.<br/><br/></span>
-            <span ng-show="select.fileUploadType == 'remote' && select.typeResource == 'dataset'">Provide a URL to a remote XML/GML file or a ZIP file containing one or multiple XML/GML files, either from a request to an INSPIRE Spatial Data Service endpoint or a file repository. The download will be initiated after clicking on the 'Start' button. This download has a timeout of 120s.<br/><br/></span>
+            <span ng-show="select.fileUploadType == 'remote' && select.typeResource == 'dataset'">Provide a URL to a remote XML/GML file or a ZIP file containing one or multiple XML/GML files, either from a request to an INSPIRE Spatial Data Service endpoint or a file repository. The download will be initiated after clicking on the 'Start' button. This download has a timeout of 120s.<br/><br/></span>            
             <div class="ecl-form-group">
               <div class="rTable">
                 <div class="rTableRow">
@@ -5386,7 +5379,7 @@
       <section class="ecl-footer-standardised__section">
         <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">Contact us</div>
         <ul class="ecl-footer-standardised__list">
-          <li class="ecl-footer-standardised__list-item"><a href="https://github.com/inspire-eu-validation/community/wiki/Your-feedback"
+          <li class="ecl-footer-standardised__list-item"><a href="https://github.com/INSPIRE-MIF/helpdesk-validator"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Contact information</a></li>
         </ul>
       </section>
@@ -5415,7 +5408,7 @@
       <section class="ecl-footer-standardised__section">
         <div class="ecl-footer-standardised__title ecl-footer-standardised__title--separator">About us</div>
         <ul class="ecl-footer-standardised__list">
-          <li class="ecl-footer-standardised__list-item"><a href="../about/index.html"
+          <li class="ecl-footer-standardised__list-item"><a href="https://joinup.ec.europa.eu/collection/elise-european-location-interoperability-solutions-e-government/solution/inspire-reference-validator/about"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">Information about the INSPIRE Validator</a></li>
         </ul>
       </section>
@@ -5424,9 +5417,9 @@
         <ul class="ecl-footer-standardised__list">
           <li class="ecl-footer-standardised__list-item"><a href="https://inspire.ec.europa.eu/"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">INSPIRE Knowledge Base</a></li>
-          <li class="ecl-footer-standardised__list-item"><a href="https://inspire-geoportal.ec.europa.eu/)"
+          <li class="ecl-footer-standardised__list-item"><a href="https://inspire-geoportal.ec.europa.eu/"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">INSPIRE Geoportal</a></li>
-          <li class="ecl-footer-standardised__list-item"><a href="https://inspire.ec.europa.eu/forum"
+          <li class="ecl-footer-standardised__list-item"><a href="https://github.com/INSPIRE-MIF/helpdesk"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">INSPIRE Community Forum</a></li>
           <li class="ecl-footer-standardised__list-item"><a href="https://inspire.ec.europa.eu/registry"
               class="ecl-footer-standardised__link ecl-link ecl-link--standalone">INSPIRE Registry</a></li>
